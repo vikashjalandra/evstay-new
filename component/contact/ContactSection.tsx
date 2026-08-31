@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowRight, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
   const [propertyType, setPropertyType] = useState<string>('Hotel');
@@ -14,6 +14,10 @@ export const ContactSection: React.FC = () => {
     additionalDetails: '',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [statusMessage, setStatusMessage] = useState<string>('');
+
   const propertyTypes = ['Hotel', 'Resort', 'Restaurant', 'Highway Property', 'Other'];
 
   const handleChange = (
@@ -22,9 +26,48 @@ export const ContactSection: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form Submitted:', { ...formData, propertyType });
+    setIsSubmitting(true);
+    setStatus('idle');
+    setStatusMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...formData, propertyType }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setStatus('success');
+        setStatusMessage(
+          data.message || 'Thank you! Your enquiry has been sent to hr@dassgroup.in.'
+        );
+        setFormData({
+          fullName: '',
+          businessEmail: '',
+          phoneNumber: '',
+          propertyName: '',
+          cityLocation: '',
+          parkingSpaces: '',
+          additionalDetails: '',
+        });
+      } else {
+        setStatus('error');
+        setStatusMessage(data.error || 'Failed to send your request. Please try again.');
+      }
+    } catch (err) {
+      console.error('Contact Form Submission Error:', err);
+      setStatus('error');
+      setStatusMessage('An unexpected network error occurred. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -110,6 +153,27 @@ export const ContactSection: React.FC = () => {
           <div className="lg:col-span-7 bg-white rounded-3xl p-8 md:p-12 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.05)] border border-gray-100">
             <form onSubmit={handleSubmit} className="space-y-8">
               
+              {/* Feedback Alert Banners */}
+              {status === 'success' && (
+                <div className="flex items-start space-x-3 p-4 bg-green-50 border border-green-200 rounded-2xl text-green-800 text-sm">
+                  <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-green-900">Enquiry Sent!</p>
+                    <p className="text-xs text-green-700 mt-0.5">{statusMessage}</p>
+                  </div>
+                </div>
+              )}
+
+              {status === 'error' && (
+                <div className="flex items-start space-x-3 p-4 bg-red-50 border border-red-200 rounded-2xl text-red-800 text-sm">
+                  <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-red-900">Submission Error</p>
+                    <p className="text-xs text-red-700 mt-0.5">{statusMessage}</p>
+                  </div>
+                </div>
+              )}
+
               {/* Input Grid Row 1 */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -257,10 +321,20 @@ export const ContactSection: React.FC = () => {
                 </p>
                 <button
                   type="submit"
-                  className="w-full sm:w-auto bg-green-600 text-white hover:bg-green-700 shadow-md shadow-green-600/20 transition-all shrink-0 px-8 py-3.5 rounded-full text-xs font-semibold flex items-center justify-center space-x-2 group cursor-pointer"
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto bg-green-600 text-white hover:bg-green-700 disabled:opacity-60 disabled:cursor-not-allowed shadow-md shadow-green-600/20 transition-all shrink-0 px-8 py-3.5 rounded-full text-xs font-semibold flex items-center justify-center space-x-2 group cursor-pointer"
                 >
-                  <span>Submit Enquiry</span>
-                  <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 text-white animate-spin" />
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Submit Enquiry</span>
+                      <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
+                    </>
+                  )}
                 </button>
               </div>
 
