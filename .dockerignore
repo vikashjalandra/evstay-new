@@ -1,0 +1,63 @@
+# Dependencies (installed inside the image)
+node_modules/
+npm-debug.log*
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+.vercel/
+
+# Git and editor
+.git/
+.gitignore
+.gitattributes
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.log
+
+# Secrets — do not bake into the image; set them as Cloud Run environment variables at runtime
+.env
+.env.*
+!.env.example
+
+# Docker metadata
+Dockerfile*
+.dockerignore
+compose.yaml
+compose.yml
+docker-compose*.yaml
+docker-compose*.yml
+
+# Docs and CI
+*.md
+docs/
+.github/
+
+# Caches and temp
+.cache/
+.eslintcache
+.swc/
+.turbo/
+.tmp/
+.temp/
+*.tsbuildinfo
+
+# Lint/format (not needed to build)
+eslint.config.*
+.prettierrc*
+prettier.config.*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Agent / IDE metadata
+.cursor/
+AGENTS.md
+CLAUDE.md

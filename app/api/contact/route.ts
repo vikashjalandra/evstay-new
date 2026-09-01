@@ -23,18 +23,27 @@ export async function POST(request: Request) {
       );
     }
 
-    const smtpHost = process.env.SMTP_HOST || 'smtp.gmail.com';
-    const smtpPort = Number(process.env.SMTP_PORT) || 465;
+    const smtpHost = process.env.SMTP_HOST;
+    const smtpPort = Number(process.env.SMTP_PORT);
     const smtpUser = process.env.SMTP_USER;
     const smtpPass = process.env.SMTP_PASS;
-    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL || 'hr@dassgroup.in';
+    const receiverEmail = process.env.CONTACT_RECEIVER_EMAIL;
 
-    if (!smtpUser || !smtpPass) {
-      console.warn('SMTP credentials (SMTP_USER / SMTP_PASS) not configured in environment variables.');
+    if (
+      !smtpHost ||
+      !Number.isFinite(smtpPort) ||
+      smtpPort <= 0 ||
+      !smtpUser ||
+      !smtpPass ||
+      !receiverEmail
+    ) {
+      console.warn(
+        'SMTP environment variables are missing. Set SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, and CONTACT_RECEIVER_EMAIL.',
+      );
       return NextResponse.json(
         {
           error:
-            'Server email configuration is missing. Please set SMTP_USER and SMTP_PASS in environment variables.',
+            'Server email configuration is missing. Set SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, and CONTACT_RECEIVER_EMAIL.',
         },
         { status: 500 }
       );
@@ -43,7 +52,7 @@ export async function POST(request: Request) {
     const cleanSmtpUser = smtpUser?.trim().replace(/^['"]|['"]$/g, '');
     const cleanSmtpPass = smtpPass?.trim().replace(/^['"]|['"]$/g, '');
 
-    const isSecure = process.env.SMTP_SECURE === 'true' || smtpPort === 465;
+    const isSecure = process.env.SMTP_SECURE === 'true';
 
     // Configure Nodemailer Transporter
     const transporter = nodemailer.createTransport({
