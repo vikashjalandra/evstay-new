@@ -22,14 +22,14 @@ export const Footer: React.FC = () => {
             {/* Social / Action Circle Buttons */}
             <div className="flex items-center space-x-3 pt-2">
               <a
-                href="#"
+                href="https://dassgroup.in"
                 className="w-10 h-10 rounded-full bg-white/5 hover:bg-primary-600 flex items-center justify-center text-gray-400 hover:text-white transition-all"
                 aria-label="Website"
               >
                 <Globe className="w-4 h-4" />
               </a>
               <a
-                href="mailto:info@evstay.in"
+                href="mailto:sales@evstay.in"
                 className="w-10 h-10 rounded-full bg-white/5 hover:bg-primary-600 flex items-center justify-center text-gray-400 hover:text-white transition-all"
                 aria-label="Email Us"
               >
@@ -104,20 +104,21 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm text-gray-400">
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary-400 shrink-0" />
-                <a href="mailto:info@evstay.in" className="hover:text-primary-400 transition-colors">
-                  info@evstay.in
+                <a href="mailto:sales@evstay.in" className="hover:text-primary-400 transition-colors">
+                  sales@evstay.in
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary-400 shrink-0" />
-                <a href="tel:+917498369242" className="hover:text-primary-400 transition-colors">
-                  +91 7498369242
+                <a href="tel:+917507245993" className="hover:text-primary-400 transition-colors">
+                  +91 7507245993
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-primary-400 shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
-                  Office 204, A Wing, City Vista, Kharadi, Pune, Maharashtra 411014
+                  Office No 1, Pangare Building, Velu Phata, Velu, Pune
+                  {/* Office 204, A Wing, City Vista, Kharadi, Pune, Maharashtra 411014 */}
                 </span>
               </li>
             </ul>

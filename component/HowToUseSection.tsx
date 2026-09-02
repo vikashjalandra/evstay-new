@@ -22,7 +22,7 @@ const stepsData: Step[] = [
     title: 'Stay & Relax',
     description:
       'While the EV charges, the guest can check in, relax, dine or enjoy their stay. The hotel staff takes care of the charging process.',
-    imageSrc: "/images/how-to-use-step-2.avif",
+    imageSrc: "/images/how-to-use-step-3.avif",
     imageAlt: 'Guest relaxing in hotel room while EV charges outside',
   },
   {
@@ -30,7 +30,7 @@ const stepsData: Step[] = [
     title: 'Charged & Ready',
     description:
       'Once charging is complete, the staff disconnects the charger and returns the key to the guest with the EV charged and ready for the journey.',
-    imageSrc: "/images/how-to-use-step-3.avif",
+    imageSrc: "/images/how-to-use-step-2.avif",
     imageAlt: 'Hotel staff returning key to guest next to fully charged EV',
   },
 ];

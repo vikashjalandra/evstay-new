@@ -1,3 +1,4 @@
+import ContactSection from '@/component/contact/ContactSection'
 import FAQSection from '@/component/FAQSection'
 import Footer from '@/component/Footer'
 import Header from '@/component/Header'
@@ -18,18 +19,19 @@ export const metadata: Metadata = {
 };
 
 function page() {
-    return (
-        <>
-            <Header />
-            <PowerYourPropertySection />
-            <WhyPartnerWithUsSection />
-            <BuiltForPartnersSection />
-            <PartnershipJourneySection />
-            <ChargingSolutionSection/>
-            <FAQSection />
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <PowerYourPropertySection />
+      <ContactSection />
+      <WhyPartnerWithUsSection />
+      <BuiltForPartnersSection />
+      <PartnershipJourneySection />
+      <ChargingSolutionSection />
+      <FAQSection />
+      <Footer />
+    </>
+  )
 }
 
 export default page

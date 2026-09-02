@@ -20,8 +20,8 @@ export const Hero: React.FC = () => {
         <div className="max-w-xl space-y-6">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl font-extralight tracking-tight leading-[1.15]">
-            Powering Every Stay. <br />
-            Every Journey.
+            BE CONFIDENT WITH<br />
+            EV.
           </h1>
 
           {/* Subtitle */}

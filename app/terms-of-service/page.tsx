@@ -56,8 +56,8 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-normal text-gray-950 tracking-tight">4. Contact Information</h2>
               <p>
                 For legal inquiries regarding terms, please write to{' '}
-                <a href="mailto:info@evstay.in" className="text-primary-600 underline">
-                  info@evstay.in
+                <a href="mailto:sales@evstay.in" className="text-primary-600 underline">
+                  sales@evstay.in
                 </a>
                 .
               </p>

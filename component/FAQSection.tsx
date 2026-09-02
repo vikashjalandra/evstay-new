@@ -51,7 +51,7 @@ export const FAQSection: React.FC = () => {
   return (
     <section className="w-full bg-[#fcfcfc] text-gray-900 py-16 md:py-24 px-6 md:px-12 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        
+
         {/* Left Column: Heading & Help Box */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-12">
           <div className="space-y-4">
@@ -90,7 +90,7 @@ export const FAQSection: React.FC = () => {
             {/* Contact Us Pill Button */}
             <div>
               <a
-                href="https://api.whatsapp.com/send?phone=917498369242&text=Hi%2C%20I%20have%20a%20question%20about%20EVSTAY"
+                href="https://api.whatsapp.com/send?phone=917507245993&text=Hi%2C%20I%20have%20a%20question%20about%20EVSTAY"
                 className="inline-block bg-primary-600 hover:bg-primary-700 text-white rounded-lg px-10 py-2.5 text-xs font-semibold tracking-tight shadow-md shadow-primary-600/20 transition-all"
               >
                 Contact us
@@ -107,23 +107,20 @@ export const FAQSection: React.FC = () => {
             return (
               <div
                 key={item.id}
-                className={`bg-white border rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(0,0,0,0.03)] transition-all duration-200 ${
-                  isOpen ? 'border-primary-300 ring-1 ring-primary-100' : 'border-gray-100/90'
-                }`}
+                className={`bg-white border rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(0,0,0,0.03)] transition-all duration-200 ${isOpen ? 'border-primary-300 ring-1 ring-primary-100' : 'border-gray-100/90'
+                  }`}
               >
                 <button
                   onClick={() => toggleAccordion(item.id)}
                   className="w-full text-left p-6 md:px-8 md:py-6 flex items-center justify-between gap-4 focus:outline-none cursor-pointer"
                 >
-                  <span className={`text-sm md:text-base font-medium leading-snug transition-colors ${
-                    isOpen ? 'text-primary-700 font-semibold' : 'text-gray-900'
-                  }`}>
+                  <span className={`text-sm md:text-base font-medium leading-snug transition-colors ${isOpen ? 'text-primary-700 font-semibold' : 'text-gray-900'
+                    }`}>
                     {item.question}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 transition-transform duration-300 shrink-0 ${
-                      isOpen ? 'transform rotate-180 text-primary-600' : 'text-gray-500'
-                    }`}
+                    className={`w-5 h-5 transition-transform duration-300 shrink-0 ${isOpen ? 'transform rotate-180 text-primary-600' : 'text-gray-500'
+                      }`}
                   />
                 </button>
 

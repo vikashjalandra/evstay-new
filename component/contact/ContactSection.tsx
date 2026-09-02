@@ -93,7 +93,7 @@ export const ContactSection: React.FC = () => {
 
         {/* Content Layout: Direct Lines + Form */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start pt-6">
-          
+
           {/* Left Column: Direct Lines Info */}
           <div className="lg:col-span-5 space-y-8 pt-4">
             <h3 className="text-2xl font-light text-gray-950 tracking-tight">
@@ -109,10 +109,10 @@ export const ContactSection: React.FC = () => {
                     PARTNERSHIPS
                   </span>
                   <a
-                    href="tel:+918625875115"
+                    href="tel:+917507245993"
                     className="text-sm font-medium text-gray-900 hover:text-green-600 transition-colors"
                   >
-                    +91 8625875115
+                    +91 7507245993
                   </a>
                 </div>
               </div>
@@ -125,10 +125,10 @@ export const ContactSection: React.FC = () => {
                     GENERAL ENQUIRIES
                   </span>
                   <a
-                    href="mailto:info@evstay.in"
+                    href="mailto:sales@evstay.in"
                     className="text-sm font-medium text-gray-900 hover:text-green-600 transition-colors"
                   >
-                    info@evstay.in
+                    sales@evstay.in
                   </a>
                 </div>
               </div>
@@ -143,6 +143,7 @@ export const ContactSection: React.FC = () => {
                   <p className="text-sm font-medium text-gray-900 leading-relaxed">
                     Office No 1, Pangare Building, Velu <br />
                     Phata, Velu, Pune
+                    {/* Office 204, A Wing, City Vista, Kharadi, Pune, Maharashtra 411014 */}
                   </p>
                 </div>
               </div>
@@ -152,7 +153,7 @@ export const ContactSection: React.FC = () => {
           {/* Right Column: Contact Form Box */}
           <div className="lg:col-span-7 bg-white rounded-3xl p-8 md:p-12 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.05)] border border-gray-100">
             <form onSubmit={handleSubmit} className="space-y-8">
-              
+
               {/* Feedback Alert Banners */}
               {status === 'success' && (
                 <div className="flex items-start space-x-3 p-4 bg-green-50 border border-green-200 rounded-2xl text-green-800 text-sm">
@@ -250,11 +251,10 @@ export const ContactSection: React.FC = () => {
                       key={type}
                       type="button"
                       onClick={() => setPropertyType(type)}
-                      className={`px-5 py-2.5 rounded-full text-xs font-medium transition-colors cursor-pointer ${
-                        propertyType === type
-                          ? 'bg-green-600 text-white shadow-sm'
-                          : 'bg-gray-50 text-gray-600 border border-gray-200 hover:border-green-400 hover:text-green-700'
-                      }`}
+                      className={`px-5 py-2.5 rounded-full text-xs font-medium transition-colors cursor-pointer ${propertyType === type
+                        ? 'bg-green-600 text-white shadow-sm'
+                        : 'bg-gray-50 text-gray-600 border border-gray-200 hover:border-green-400 hover:text-green-700'
+                        }`}
                     >
                       {type}
                     </button>

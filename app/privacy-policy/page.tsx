@@ -56,8 +56,8 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-normal text-gray-950 tracking-tight">4. Contact Us</h2>
               <p>
                 If you have any questions regarding this Privacy Policy, please contact us at{' '}
-                <a href="mailto:info@evstay.in" className="text-primary-600 underline">
-                  info@evstay.in
+                <a href="mailto:sales@evstay.in" className="text-primary-600 underline">
+                  sales@evstay.in
                 </a>
                 .
               </p>

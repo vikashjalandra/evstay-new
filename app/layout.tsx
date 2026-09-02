@@ -88,9 +88,9 @@ const jsonLdOrganization = {
   logo: "https://evstay.in/images/evstay-logo.avif",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+917498369242",
+    telephone: "+917507245993",
     contactType: "customer service",
-    email: "info@evstay.in",
+    email: "sales@evstay.in",
     areaServed: "IN",
     availableLanguage: ["English", "Hindi"],
   },
