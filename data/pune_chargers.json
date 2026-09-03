@@ -1,0 +1,714 @@
+[
+  {
+    "id": "pune-ev-01",
+    "name": "JW Marriott Hotel Pune EV Hub",
+    "category": "LUXURY HOTEL • SHIVAJINAGAR",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5308,
+      "lng": 73.8288
+    },
+    "address": "Senapati Bapat Road, Shivajinagar, Pune, Maharashtra 411016",
+    "phone": "+91 20 6683 3333",
+    "rating": 4.8,
+    "reviewCount": 215,
+    "evBadgeText": "Ultra Fast 60kW DC Charging Available",
+    "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "4 Chargers",
+      "powerOutput": "60 kW DC Fast & 22 kW AC",
+      "parkingSpaces": "6 Dedicated Bays",
+      "bayType": "Covered EV Priority Parking"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.8,
+      "reviewCount": 215,
+      "categories": {
+        "chargingExperience": 4.9,
+        "staffAssistance": 4.9,
+        "propertyExperience": 4.7
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Aditya K.",
+          "date": "1 day ago",
+          "rating": 5,
+          "text": "Excellent ultra-fast charging experience! Charged my Nexon EV from 20% to 80% while enjoying coffee at Paasha."
+        },
+        {
+          "id": "r2",
+          "author": "Priya Sharma",
+          "date": "4 days ago",
+          "rating": 5,
+          "text": "Valet staff was super helpful. They hooked up the charger for us seamlessly."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 60 kW DC Fast",
+        "power": "60 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 60 kW DC Fast",
+        "power": "60 kW",
+        "status": "In Use"
+      },
+      {
+        "id": "c3",
+        "name": "Charger 03 — 22 kW AC Type 2",
+        "power": "22 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c4",
+        "name": "Charger 04 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "6 Reserved EV bays",
+      "chargingLocation": "Ground floor visitor parking (P1)",
+      "access": "Open for hotel guests & public EV drivers",
+      "operatingHours": "24 Hours / 7 Days a week"
+    },
+    "operatingHours": "Open 24/7"
+  },
+  {
+    "id": "pune-ev-02",
+    "name": "The Ritz-Carlton Pune EV Station",
+    "category": "5-STAR LUXURY • KOREGAON PARK ANNEXE",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5492,
+      "lng": 73.9034
+    },
+    "address": "Golf Course Square, Airport Road, Yerawada, Pune, Maharashtra 411006",
+    "phone": "+91 20 6767 5000",
+    "rating": 4.9,
+    "reviewCount": 184,
+    "evBadgeText": "High-Speed Dual DC Charging",
+    "heroImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "3 Chargers",
+      "powerOutput": "120 kW Dual Gun DC",
+      "parkingSpaces": "4 Spaces",
+      "bayType": "Underground Executive Parking"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.9,
+      "reviewCount": 184,
+      "categories": {
+        "chargingExperience": 5.0,
+        "staffAssistance": 4.9,
+        "propertyExperience": 4.9
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Vikram Sethi",
+          "date": "2 days ago",
+          "rating": 5,
+          "text": "120kW charger is blazing fast! Top up took under 30 mins while having lunch."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 120 kW Dual DC",
+        "power": "120 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 60 kW DC Fast",
+        "power": "60 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c3",
+        "name": "Charger 03 — 22 kW AC",
+        "power": "22 kW",
+        "status": "In Use"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "4 Dedicated VIP EV Bays",
+      "chargingLocation": "Basement Level B1 near main elevator",
+      "access": "All EV drivers welcome",
+      "operatingHours": "24/7 Operational"
+    },
+    "operatingHours": "Open 24/7"
+  },
+  {
+    "id": "pune-ev-03",
+    "name": "Hyatt Regency Viman Nagar EV Stay",
+    "category": "PREMIUM HOTEL • VIMAN NAGAR",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5583,
+      "lng": 73.9139
+    },
+    "address": "Weikfield IT Park, Nagar Road, Viman Nagar, Pune, Maharashtra 411014",
+    "phone": "+91 20 6645 1234",
+    "rating": 4.7,
+    "reviewCount": 142,
+    "evBadgeText": "EV Stay Partner Station",
+    "heroImage": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "3 Chargers",
+      "powerOutput": "30 kW DC Fast & 7.4 kW AC",
+      "parkingSpaces": "5 Spaces",
+      "bayType": "Dedicated EV Charging Bay"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.7,
+      "reviewCount": 142,
+      "categories": {
+        "chargingExperience": 4.8,
+        "staffAssistance": 4.7,
+        "propertyExperience": 4.6
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Rohan Mehta",
+          "date": "3 days ago",
+          "rating": 5,
+          "text": "Super convenient location right near the airport. Plugged in overnight during my stay."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 30 kW DC Fast",
+        "power": "30 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "In Use"
+      },
+      {
+        "id": "c3",
+        "name": "Charger 03 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "5 EV spaces",
+      "chargingLocation": "Near East Entry Gate",
+      "access": "Hotel Guests & Visitors",
+      "operatingHours": "24/7 Access"
+    },
+    "operatingHours": "Open 24/7"
+  },
+  {
+    "id": "pune-ev-04",
+    "name": "Orchid Hotel Baner EV Hub",
+    "category": "BUSINESS HOTEL • BANER / BALEWADI",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5746,
+      "lng": 73.7717
+    },
+    "address": "Mumbai-Bangalore Highway, Near Balewadi Sports Complex, Baner, Pune, Maharashtra 411045",
+    "phone": "+91 20 6791 5555",
+    "rating": 4.6,
+    "reviewCount": 168,
+    "evBadgeText": "Highway Corridor Fast Charging",
+    "heroImage": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "4 Chargers",
+      "powerOutput": "50 kW DC CCS2 & 15 kW DC",
+      "parkingSpaces": "6 Spaces",
+      "bayType": "Highway EV Express Stop"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.6,
+      "reviewCount": 168,
+      "categories": {
+        "chargingExperience": 4.7,
+        "staffAssistance": 4.5,
+        "propertyExperience": 4.6
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Anish Deshmukh",
+          "date": "5 days ago",
+          "rating": 5,
+          "text": "Perfect pitstop on Mumbai-Pune expressway route! Quick 45 min charge."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 50 kW DC Fast",
+        "power": "50 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 50 kW DC Fast",
+        "power": "50 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c3",
+        "name": "Charger 03 — 15 kW DC",
+        "power": "15 kW",
+        "status": "In Use"
+      },
+      {
+        "id": "c4",
+        "name": "Charger 04 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "6 Highway EV Bays",
+      "chargingLocation": "Front Parking Lot near Highway Gate",
+      "access": "24/7 Open to Public",
+      "operatingHours": "24/7 Always Open"
+    },
+    "operatingHours": "Open 24/7"
+  },
+  {
+    "id": "pune-ev-05",
+    "name": "Sayaji Hotel Hinjawadi EV Charging Station",
+    "category": "IT PARK HOTEL • HINJAWADI",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5912,
+      "lng": 73.7389
+    },
+    "address": "Mumbai-Bangalore Bypass Highway, Hinjawadi Phase 1, Pune, Maharashtra 411057",
+    "phone": "+91 20 4212 1212",
+    "rating": 4.7,
+    "reviewCount": 192,
+    "evBadgeText": "IT Corridor Supercharger",
+    "heroImage": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "3 Chargers",
+      "powerOutput": "60 kW DC Fast Dual",
+      "parkingSpaces": "4 Spaces",
+      "bayType": "Covered EV Station"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.7,
+      "reviewCount": 192,
+      "categories": {
+        "chargingExperience": 4.8,
+        "staffAssistance": 4.7,
+        "propertyExperience": 4.6
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Sneha Patil",
+          "date": "1 week ago",
+          "rating": 5,
+          "text": "Great charger for Hinjawadi techies. Works seamlessly with EVStay app."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 60 kW DC Fast",
+        "power": "60 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 60 kW DC Fast",
+        "power": "60 kW",
+        "status": "In Use"
+      },
+      {
+        "id": "c3",
+        "name": "Charger 03 — 22 kW AC",
+        "power": "22 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "4 Dedicated Spots",
+      "chargingLocation": "Ground level main driveway",
+      "access": "Public Access",
+      "operatingHours": "24/7 Service"
+    },
+    "operatingHours": "Open 24/7"
+  },
+  {
+    "id": "pune-ev-06",
+    "name": "Phoenix Marketcity Viman Nagar EV Hub",
+    "category": "SHOPPING MALL • VIMAN NAGAR",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5621,
+      "lng": 73.9168
+    },
+    "address": "Viman Nagar Road, Clover Park, Viman Nagar, Pune, Maharashtra 411014",
+    "phone": "+91 20 6689 0085",
+    "rating": 4.5,
+    "reviewCount": 310,
+    "evBadgeText": "Destination Mall Fast Charging",
+    "heroImage": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "6 Chargers",
+      "powerOutput": "30 kW DC Fast & 7.4 kW AC",
+      "parkingSpaces": "8 Spaces",
+      "bayType": "Mall Basement EV Zone"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.5,
+      "reviewCount": 310,
+      "categories": {
+        "chargingExperience": 4.6,
+        "staffAssistance": 4.3,
+        "propertyExperience": 4.6
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Karan Joshi",
+          "date": "2 days ago",
+          "rating": 4,
+          "text": "Put my car on charge while watching a movie. Convenient mall parking spot!"
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 30 kW DC",
+        "power": "30 kW",
+        "status": "In Use"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 30 kW DC",
+        "power": "30 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c3",
+        "name": "Charger 03 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c4",
+        "name": "Charger 04 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "8 EV Slots",
+      "chargingLocation": "P2 Parking Level, Pillar D-14",
+      "access": "Mall Hours & EV Parking Access",
+      "operatingHours": "10:00 AM - 11:30 PM"
+    },
+    "operatingHours": "10:00 AM - 11:30 PM"
+  },
+  {
+    "id": "pune-ev-07",
+    "name": "Conrad Pune EV Lounge",
+    "category": "LUXURY HOTEL • KOREGAON PARK",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5362,
+      "lng": 73.8827
+    },
+    "address": "7 Mangaldas Road, Sangamvadi, Koregaon Park, Pune, Maharashtra 411001",
+    "phone": "+91 20 6745 6745",
+    "rating": 4.9,
+    "reviewCount": 178,
+    "evBadgeText": "24/7 EV Stay Concierge Charging",
+    "heroImage": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "3 Chargers",
+      "powerOutput": "50 kW DC CCS2 & 11 kW AC",
+      "parkingSpaces": "4 Spaces",
+      "bayType": "Valet EV Bay"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.9,
+      "reviewCount": 178,
+      "categories": {
+        "chargingExperience": 5.0,
+        "staffAssistance": 4.9,
+        "propertyExperience": 4.8
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Devendra R.",
+          "date": "Yesterday",
+          "rating": 5,
+          "text": "World-class luxury hotel with effortless charging service."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 50 kW DC",
+        "power": "50 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 11 kW AC",
+        "power": "11 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "4 Dedicated Valet Bays",
+      "chargingLocation": "Hotel Main Porch / Valet Zone",
+      "access": "Open 24/7 for EV drivers",
+      "operatingHours": "24 Hours"
+    },
+    "operatingHours": "Open 24/7"
+  },
+  {
+    "id": "pune-ev-08",
+    "name": "Pavilion Mall Kothrud / Senapati Bapat EV Station",
+    "category": "SHOPPING & ENTERTAINMENT • DECCAN",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5285,
+      "lng": 73.8341
+    },
+    "address": "Senapati Bapat Road, Next to JW Marriott, Pune, Maharashtra 411016",
+    "phone": "+91 20 6723 1111",
+    "rating": 4.6,
+    "reviewCount": 156,
+    "evBadgeText": "Fast Shopping Charger",
+    "heroImage": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "4 Chargers",
+      "powerOutput": "30 kW DC & 7.4 kW AC",
+      "parkingSpaces": "5 Spaces",
+      "bayType": "Underground Parking EV Slot"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.6,
+      "reviewCount": 156,
+      "categories": {
+        "chargingExperience": 4.7,
+        "staffAssistance": 4.4,
+        "propertyExperience": 4.7
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Manish G.",
+          "date": "4 days ago",
+          "rating": 5,
+          "text": "Easy to spot in B2 parking. Fast 30kW charging worked instantly."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 30 kW DC",
+        "power": "30 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "In Use"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "5 EV Bays",
+      "chargingLocation": "B2 Parking Slot #45",
+      "access": "Visitors & Shoppers",
+      "operatingHours": "10 AM - 11 PM"
+    },
+    "operatingHours": "10:00 AM - 11:00 PM"
+  },
+  {
+    "id": "pune-ev-09",
+    "name": "Amanora Town Centre Hadapsar EV Hub",
+    "category": "LIFESTYLE TOWN CENTRE • HADAPSAR",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5196,
+      "lng": 73.9312
+    },
+    "address": "Amanora Park Town, Hadapsar, Pune, Maharashtra 411028",
+    "phone": "+91 20 6726 7888",
+    "rating": 4.5,
+    "reviewCount": 240,
+    "evBadgeText": "East Pune Fast Charging Station",
+    "heroImage": "https://images.unsplash.com/photo-1567684014761-b65e2e59b9eb?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1567684014761-b65e2e59b9eb?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "4 Chargers",
+      "powerOutput": "60 kW Dual DC Fast",
+      "parkingSpaces": "6 Spaces",
+      "bayType": "East Wing EV Zone"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.5,
+      "reviewCount": 240,
+      "categories": {
+        "chargingExperience": 4.6,
+        "staffAssistance": 4.4,
+        "propertyExperience": 4.5
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Siddharth K.",
+          "date": "1 week ago",
+          "rating": 5,
+          "text": "Great 60kW charging speed for Hadapsar / Magarpatta residents."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 60 kW DC",
+        "power": "60 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 60 kW DC",
+        "power": "60 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "6 Reserved EV Spaces",
+      "chargingLocation": "East Block Open Visitor Parking",
+      "access": "Public Access",
+      "operatingHours": "24/7 Access"
+    },
+    "operatingHours": "Open 24/7"
+  },
+  {
+    "id": "pune-ev-10",
+    "name": "Courtyard by Marriott Pune Wakad EV Point",
+    "category": "BUSINESS HOTEL • WAKAD / PCMC",
+    "city": "Pune, Maharashtra",
+    "location": {
+      "lat": 18.5985,
+      "lng": 73.7628
+    },
+    "address": "Parihar Chowk - Wakad Road, Hinjewadi Kasarwadi Link Rd, Wakad, Pune, Maharashtra 411057",
+    "phone": "+91 20 4212 2222",
+    "rating": 4.7,
+    "reviewCount": 135,
+    "evBadgeText": "Express Corridor EV Charger",
+    "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "photos": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+    ],
+    "chargingAmenities": {
+      "chargersCount": "3 Chargers",
+      "powerOutput": "50 kW DC Fast & 7.4 kW AC",
+      "parkingSpaces": "4 Spaces",
+      "bayType": "Dedicated EV Parking"
+    },
+    "reviewsSummary": {
+      "overallRating": 4.7,
+      "reviewCount": 135,
+      "categories": {
+        "chargingExperience": 4.8,
+        "staffAssistance": 4.6,
+        "propertyExperience": 4.7
+      },
+      "sampleReviews": [
+        {
+          "id": "r1",
+          "author": "Amitabh N.",
+          "date": "3 days ago",
+          "rating": 5,
+          "text": "Extremely quick charging point near Mumbai highway bypass."
+        }
+      ]
+    },
+    "liveChargers": [
+      {
+        "id": "c1",
+        "name": "Charger 01 — 50 kW DC",
+        "power": "50 kW",
+        "status": "Available"
+      },
+      {
+        "id": "c2",
+        "name": "Charger 02 — 7.4 kW AC",
+        "power": "7.4 kW",
+        "status": "Available"
+      }
+    ],
+    "keyInfo": {
+      "parkingSpaces": "4 EV Spots",
+      "chargingLocation": "Courtyard Entry Parking",
+      "access": "Hotel Guests & Visitors",
+      "operatingHours": "24 Hours"
+    },
+    "operatingHours": "Open 24/7"
+  }
+]

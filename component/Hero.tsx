@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
           {/* Primary CTA Button */}
           <div className="pt-2">
             <a
-              href="#find-charger"
+              href="/map"
               className="inline-flex items-center gap-3 bg-primary-600 hover:bg-primary-700 text-white px-10 py-3.5 rounded-full text-xs font-semibold uppercase transition-all duration-300 shadow-lg shadow-primary-600/30 border border-primary-500/30"
             >
               FIND A CHARGER
