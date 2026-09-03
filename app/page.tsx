@@ -29,7 +29,7 @@ function page() {
       <Hero />
 
 
-      <Link href={'/map'} className='p-20 bg-white relative block group'>
+      <Link href={'/map'} className='p-5 sm:p-10 lg:p-20 bg-white relative block group'>
         <img className='w-full rounded-4xl' src="/images/charging_location_map.avif" alt="charging_location_map" />
         <div className='flex opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full items-center justify-center backdrop-blur-[1px] bg-white/30'>
           <p className='text-3xl font-medium text-black capitalize'>View all chargers</p>
