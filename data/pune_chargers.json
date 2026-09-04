@@ -54,27 +54,31 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 60 kW DC Fast",
-        "power": "60 kW",
-        "status": "Available"
+        "name": "60 kW DC",
+        "power": "60 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 60 kW DC Fast",
-        "power": "60 kW",
-        "status": "In Use"
+        "name": "60 kW DC",
+        "power": "60 kW DC",
+        "status": "In Use",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c3",
-        "name": "Charger 03 — 22 kW AC Type 2",
-        "power": "22 kW",
-        "status": "Available"
+        "name": "22 kW AC",
+        "power": "22 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c4",
-        "name": "Charger 04 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "Available"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -116,7 +120,7 @@
       "overallRating": 4.9,
       "reviewCount": 184,
       "categories": {
-        "chargingExperience": 5.0,
+        "chargingExperience": 5,
         "staffAssistance": 4.9,
         "propertyExperience": 4.9
       },
@@ -133,21 +137,24 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 120 kW Dual DC",
-        "power": "120 kW",
-        "status": "Available"
+        "name": "120 kW DC",
+        "power": "120 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 60 kW DC Fast",
-        "power": "60 kW",
-        "status": "Available"
+        "name": "60 kW DC",
+        "power": "60 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c3",
-        "name": "Charger 03 — 22 kW AC",
-        "power": "22 kW",
-        "status": "In Use"
+        "name": "22 kW AC",
+        "power": "22 kW AC",
+        "status": "In Use",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -205,21 +212,24 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 30 kW DC Fast",
-        "power": "30 kW",
-        "status": "Available"
+        "name": "30 kW DC",
+        "power": "30 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "In Use"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "In Use",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c3",
-        "name": "Charger 03 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "Available"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -276,27 +286,31 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 50 kW DC Fast",
-        "power": "50 kW",
-        "status": "Available"
+        "name": "50 kW DC",
+        "power": "50 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 50 kW DC Fast",
-        "power": "50 kW",
-        "status": "Available"
+        "name": "50 kW DC",
+        "power": "50 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c3",
-        "name": "Charger 03 — 15 kW DC",
-        "power": "15 kW",
-        "status": "In Use"
+        "name": "15 kW DC",
+        "power": "15 kW DC",
+        "status": "In Use",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c4",
-        "name": "Charger 04 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "Available"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -353,21 +367,24 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 60 kW DC Fast",
-        "power": "60 kW",
-        "status": "Available"
+        "name": "60 kW DC",
+        "power": "60 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 60 kW DC Fast",
-        "power": "60 kW",
-        "status": "In Use"
+        "name": "60 kW DC",
+        "power": "60 kW DC",
+        "status": "In Use",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c3",
-        "name": "Charger 03 — 22 kW AC",
-        "power": "22 kW",
-        "status": "Available"
+        "name": "22 kW AC",
+        "power": "22 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -424,27 +441,31 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 30 kW DC",
-        "power": "30 kW",
-        "status": "In Use"
+        "name": "30 kW DC",
+        "power": "30 kW DC",
+        "status": "In Use",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 30 kW DC",
-        "power": "30 kW",
-        "status": "Available"
+        "name": "30 kW DC",
+        "power": "30 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c3",
-        "name": "Charger 03 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "Available"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c4",
-        "name": "Charger 04 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "Available"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -483,7 +504,7 @@
       "overallRating": 4.9,
       "reviewCount": 178,
       "categories": {
-        "chargingExperience": 5.0,
+        "chargingExperience": 5,
         "staffAssistance": 4.9,
         "propertyExperience": 4.8
       },
@@ -500,15 +521,17 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 50 kW DC",
-        "power": "50 kW",
-        "status": "Available"
+        "name": "50 kW DC",
+        "power": "50 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 11 kW AC",
-        "power": "11 kW",
-        "status": "Available"
+        "name": "11 kW AC",
+        "power": "11 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -564,15 +587,17 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 30 kW DC",
-        "power": "30 kW",
-        "status": "Available"
+        "name": "30 kW DC",
+        "power": "30 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "In Use"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "In Use",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -628,15 +653,17 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 60 kW DC",
-        "power": "60 kW",
-        "status": "Available"
+        "name": "60 kW DC",
+        "power": "60 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 60 kW DC",
-        "power": "60 kW",
-        "status": "Available"
+        "name": "60 kW DC",
+        "power": "60 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {
@@ -692,15 +719,17 @@
     "liveChargers": [
       {
         "id": "c1",
-        "name": "Charger 01 — 50 kW DC",
-        "power": "50 kW",
-        "status": "Available"
+        "name": "50 kW DC",
+        "power": "50 kW DC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       },
       {
         "id": "c2",
-        "name": "Charger 02 — 7.4 kW AC",
-        "power": "7.4 kW",
-        "status": "Available"
+        "name": "7.4 kW AC",
+        "power": "7.4 kW AC",
+        "status": "Available",
+        "tariff": "₹16/kWh"
       }
     ],
     "keyInfo": {

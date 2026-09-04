@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import PropertyDetailMobileView, { PropertyDetailData } from '@/component/PropertyDetailMobileView';
-import puneChargersData from '@/data/pune_chargers.json';
 import {
   Search,
   SlidersHorizontal,
@@ -17,8 +16,48 @@ import {
 
 const PUNE_CENTER: [number, number] = [18.5204, 73.8567];
 
+function getOverallRating(charger: PropertyDetailData): number {
+  const gRating = Number(charger.platformRatings?.google?.rating || charger.rating || 4.7);
+  const gCount = Number(charger.platformRatings?.google?.reviewCount || charger.reviewCount || 180);
+  const aRating = Number(charger.platformRatings?.apple?.rating || Math.max(4.0, gRating - 0.1));
+  const aCount = Number(charger.platformRatings?.apple?.reviewCount || Math.floor(gCount * 0.6));
+  const eRating = Number(charger.platformRatings?.evstay?.rating || Math.min(5.0, gRating + 0.1));
+  const eCount = Number(charger.platformRatings?.evstay?.reviewCount || Math.floor(gCount * 0.8));
+  const total = gCount + aCount + eCount;
+  return total > 0
+    ? Number((((gRating * gCount) + (aRating * aCount) + (eRating * eCount)) / total).toFixed(1))
+    : Number(gRating.toFixed(1));
+}
+
 export default function MapPage() {
-  const chargers = puneChargersData as PropertyDetailData[];
+  const [chargers, setChargers] = useState<PropertyDetailData[]>([]);
+  const [isLoadingLive, setIsLoadingLive] = useState(false);
+
+  // Fetch dynamic chargers from API
+  useEffect(() => {
+    let isMounted = true;
+    async function loadDynamicChargers() {
+      try {
+        setIsLoadingLive(true);
+        const res = await fetch('/api/chargers', { cache: 'no-store' });
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && Array.isArray(json.data) && isMounted) {
+            setChargers(json.data);
+          }
+        }
+      } catch (err) {
+        console.error('Failed to load dynamic chargers:', err);
+      } finally {
+        if (isMounted) setIsLoadingLive(false);
+      }
+    }
+
+    loadDynamicChargers();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
   
   // Starting with NULL so default page is JUST the map without any preview box
   const [selectedCharger, setSelectedCharger] = useState<PropertyDetailData | null>(null);
@@ -44,10 +83,11 @@ export default function MapPage() {
       if (!matchSearch) return false;
 
       if (activeFilter === 'fast') {
-        return c.chargingAmenities.powerOutput.toLowerCase().includes('dc') ||
-          c.chargingAmenities.powerOutput.toLowerCase().includes('60') ||
-          c.chargingAmenities.powerOutput.toLowerCase().includes('50') ||
-          c.chargingAmenities.powerOutput.toLowerCase().includes('120');
+        const pOutput = c.chargingAmenities?.powerOutput?.toLowerCase() || c.liveChargers?.[0]?.power?.toLowerCase() || '';
+        return pOutput.includes('dc') ||
+          pOutput.includes('60') ||
+          pOutput.includes('50') ||
+          pOutput.includes('120');
       }
       if (activeFilter === 'hotels') {
         return c.category.toLowerCase().includes('hotel') || c.category.toLowerCase().includes('resort');
@@ -149,7 +189,7 @@ export default function MapPage() {
     }
   };
 
-  const availableCount = selectedCharger
+  const availableCount = selectedCharger?.liveChargers
     ? selectedCharger.liveChargers.filter((c) => c.status === 'Available').length
     : 0;
 
@@ -290,37 +330,16 @@ export default function MapPage() {
               <X className="w-4 h-4" />
             </button>
 
-            {/* Top Pill Status Badge */}
-            {/* <div className="flex items-center justify-between pr-6">
-              <span className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-800 text-[11px] font-bold px-3 py-1 rounded-full border border-emerald-200/80">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                AVAILABLE ({availableCount})
-              </span>
-              <button
-                onClick={() => {
-                  const idx = chargers.findIndex((c) => c.id === selectedCharger.id);
-                  const nextCharger = chargers[(idx + 1) % chargers.length];
-                  setSelectedCharger(nextCharger);
-                  if (mapRef.current) {
-                    mapRef.current.flyTo([nextCharger.location.lat, nextCharger.location.lng], 14);
-                  }
-                }}
-                className="text-[11px] font-semibold text-gray-400 hover:text-gray-700"
-              >
-                Next ➔
-              </button>
-            </div> */}
-
             {/* Property Image Preview */}
             <div className="relative w-full h-56 rounded-2xl overflow-hidden bg-gray-100 shadow-sm">
               <img
-                src={selectedCharger.heroImage}
+                src={selectedCharger.photos?.[0] || selectedCharger.heroImage || 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80'}
                 alt={selectedCharger.name}
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-2 right-2 bg-white backdrop-blur-md px-2 py-0.5 rounded-lg text-black text-xs font-medium flex items-center gap-1">
                 <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                {selectedCharger.rating}
+                {getOverallRating(selectedCharger)}
               </div>
             </div>
 
@@ -341,7 +360,7 @@ export default function MapPage() {
                   Charging Model
                 </span>
                 <span className="text-sm font-medium text-gray-900 block mt-0.5">
-                  {selectedCharger.chargingAmenities.powerOutput}
+                  {selectedCharger.chargingAmenities?.powerOutput || selectedCharger.liveChargers?.[0]?.power || '22 kW Fast Charger'}
                 </span>
               </div>
 

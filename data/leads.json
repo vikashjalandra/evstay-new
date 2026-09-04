@@ -1,0 +1,14 @@
+[
+  {
+    "id": "lead-1788515239371-670",
+    "stationId": "station-1788513459483",
+    "stationName": "tesing site",
+    "category": "Hotel",
+    "address": "viman nager, khardi",
+    "phone": "+91 98765 43210",
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "action": "Phone Call / Call to Book Slot",
+    "createdAt": "2026-09-04T09:47:19.371Z"
+  }
+]

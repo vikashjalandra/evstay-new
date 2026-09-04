@@ -1,0 +1,117 @@
+[
+  {
+    "id": "station-1788513459483",
+    "name": "tesing site",
+    "category": "Hotel",
+    "city": "Pune, Maharashtra",
+    "address": "viman nager, khardi",
+    "avgStayPrice": "₹3,500/night",
+    "location": {
+      "lat": 18.55709,
+      "lng": 73.92769
+    },
+    "rating": 2,
+    "reviewCount": 930,
+    "keyInfo": {
+      "parkingSpaces": "6 Reserved EV Spaces",
+      "chargingLocation": "East Block Open Visitor Parking",
+      "operatingHours": "24/7 Access",
+      "access": "Open to Public & Guests"
+    },
+    "operatingHours": "24/7 Access",
+    "platformRatings": {
+      "google": {
+        "rating": 1.7,
+        "reviewCount": 820
+      },
+      "apple": {
+        "rating": 4.6,
+        "reviewCount": 68
+      },
+      "evstay": {
+        "rating": 2.9,
+        "reviewCount": 42,
+        "verifiedBookings": 58
+      }
+    },
+    "photos": [
+      "https://res.cloudinary.com/ql4uodpw/image/upload/v1788513601/evstay/stations/b9b3q1frw5kbqhozkfug.png",
+      "https://res.cloudinary.com/ql4uodpw/image/upload/v1788513632/evstay/stations/x8yg5bmihqebqtzz4njb.png",
+      "https://res.cloudinary.com/ql4uodpw/image/upload/v1788513781/evstay/stations/d9hsrqphf18z61iovhzt.png",
+      "https://res.cloudinary.com/ql4uodpw/image/upload/v1788513781/evstay/stations/rjkjvspg3rg7z3ezhm3c.jpg"
+    ],
+    "amenities": [
+      "Restrooms Available",
+      "Valet EV Parking",
+      "High-Speed Wi-Fi",
+      "Executive Lounge",
+      "24/7 Security CCTV",
+      "Cafe / Coffee Lounge",
+      "Swimming Pool",
+      "Restaurant Dining"
+    ],
+    "liveChargers": [
+      {
+        "id": "gun-1",
+        "name": "3.5 kW AC",
+        "power": "3.5 kW AC",
+        "tariff": "₹12/kWh",
+        "status": "Available"
+      },
+      {
+        "id": "gun-1788514249695-5",
+        "name": "7.5 kW AC",
+        "power": "7.5 kW AC",
+        "tariff": "₹16/kWh",
+        "status": "Available"
+      },
+      {
+        "id": "gun-1788514254639-3",
+        "name": "7.5 kW AC",
+        "power": "7.5 kW AC",
+        "tariff": "₹16/kWh",
+        "status": "In Use"
+      },
+      {
+        "id": "gun-1788514254766-4",
+        "name": "3.5 kW AC",
+        "power": "3.5 kW AC",
+        "tariff": "₹12/kWh",
+        "status": "Maintenance"
+      }
+    ],
+    "reviewsSummary": {
+      "overallRating": 4.8,
+      "reviewCount": 24,
+      "categories": {
+        "chargingExperience": 1,
+        "staffAssistance": 4,
+        "propertyExperience": 2.7
+      },
+      "sampleReviews": [
+        {
+          "id": "rev-1",
+          "author": "Rahul Sharma (Tata Nexon EV)",
+          "date": "2 days ago",
+          "rating": 5,
+          "text": "This is first review"
+        },
+        {
+          "id": "rev-1788514129847",
+          "author": "Verified EV Driver",
+          "date": "Just now",
+          "rating": 2,
+          "text": "This is second review"
+        }
+      ]
+    },
+    "heroImage": "https://res.cloudinary.com/ql4uodpw/image/upload/v1788513601/evstay/stations/b9b3q1frw5kbqhozkfug.png",
+    "chargingAmenities": {
+      "chargersCount": "4 Charging Guns",
+      "powerOutput": "3.5 kW AC",
+      "parkingSpaces": "Dedicated Hotel EV Parking",
+      "bayType": "24/7 Access"
+    },
+    "phone": "+91 98765 43210"
+  }
+]
