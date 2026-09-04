@@ -240,7 +240,7 @@ export const PropertyDetailMobileView: React.FC<PropertyDetailMobileViewProps> =
     data.category?.toLowerCase().includes('resort');
 
   return (
-    <div className="max-w-md mx-auto bg-white min-h-screen h-full overflow-y-auto font-sans text-gray-900 pb-16 shadow-xl relative overscroll-contain font-light">
+    <div className="max-w-md mx-auto bg-white min-h-screen h-full overflow-y-auto font-sans text-gray-900 pb-40 sm:pb-16 shadow-xl relative overscroll-contain font-light">
 
       {/* Top Media Gallery Hero Header Slider (Max 4 Photos) */}
       <div
