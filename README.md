@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+See [INTEGRATION.md](./INTEGRATION.md) for EVStay API and Google Maps configuration.
+
 ## Getting Started
 
 First, run the development server:
