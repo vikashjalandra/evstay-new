@@ -1,6 +1,6 @@
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
-import { ArrowUpRight, Compass, Shield, HelpCircle, PhoneCall, Building2 } from "lucide-react";
+import { ArrowUpRight, Compass, Shield, Building2 } from "lucide-react";
 
 export const metadata = {
   title: "Sitemap - Navigation & Directory | EV Stay",
@@ -33,6 +33,7 @@ const sitemapSections = [
     links: [
       { name: "FAQ", href: "/faq", description: "Frequently asked questions & help center" },
       { name: "Privacy Policy", href: "/privacy-policy", description: "Our data privacy & security policy" },
+      { name: "Delete Account", href: "/account-deletion", description: "EVStay Customer account deletion instructions" },
       { name: "Terms of Service", href: "/terms-of-service", description: "Terms and conditions of service" },
       { name: "Sitemap", href: "/sitemap", description: "Complete website page directory" },
     ],

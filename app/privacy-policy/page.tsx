@@ -157,6 +157,12 @@ export default function PrivacyPolicyPage() {
                 </a>{" "}
                 and include your registered mobile number and the words “EVStay Customer account deletion request.” We will verify the request before acting on it. Do not send your OTP or PIN by email.
               </p>
+              <p>
+                For complete instructions, including the data deleted, records retained, and retention periods, visit the{" "}
+                <a className={link} href="/account-deletion">
+                  EVStay Customer account deletion page
+                </a>.
+              </p>
             </section>
 
             <section className="space-y-4">
